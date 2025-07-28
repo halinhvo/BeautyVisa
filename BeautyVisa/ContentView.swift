@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Start")
+        VStack {
+            Image("BeautyVisaLogo")
+                .resizable()
+                .frame(width: 200.0, height: 200.0)
+            Spacer()
+        }
     }
 }
 
