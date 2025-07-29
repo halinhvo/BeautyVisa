@@ -13,6 +13,20 @@ struct ContentView: View {
             Image("BeautyVisaLogo")
                 .resizable()
                 .frame(width: 200.0, height: 200.0)
+            Text("BEAUTY VISA")
+                .font(.title)
+                .fontWeight(.bold)
+            Button("Start") {
+                
+            }
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.orange)
+                .cornerRadius(10)
+                .padding(.horizontal, 100)
+
             Spacer()
         }
     }
