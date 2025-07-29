@@ -1,33 +1,43 @@
-//
-//  ContentView.swift
-//  BeautyVisa
-//
-//  Created by Scholar on 7/28/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image("BeautyVisaLogo")
-                .resizable()
-                .frame(width: 200.0, height: 200.0)
-            Text("BEAUTY VISA")
+            
+        NavigationStack {
+            VStack {
+                Image("BeautyVisaLogo")
+                    .resizable()
+                    .frame(width: 200.0, height: 200.0)
+                
+              Text("BEAUTY VISA")
                 .font(.title)
                 .fontWeight(.bold)
-            Button("Start") {
+              
+                Spacer()
                 
-            }
-                .font(.headline)
-                .foregroundColor(.white)
+                Text("Regions")
+                    .font(.system(size: 30))
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.center)
+                    
+                
+                HStack(spacing: 20) {
+                    NavigationLink("Region 1", destination: SecondView())
+                    NavigationLink("Region 2", destination: SecondView())
+                    NavigationLink("Region 3", destination: SecondView())
+                }
                 .padding()
-                .frame(maxWidth: .infinity)
-                .background(Color.orange)
-                .cornerRadius(10)
-                .padding(.horizontal, 100)
-
-            Spacer()
+                
+                HStack(spacing: 20) {
+                    NavigationLink("Region 4", destination: SecondView())
+                    NavigationLink("Region 5", destination: SecondView())
+                    NavigationLink("Region 6", destination: SecondView())
+                }
+                .padding()
+                
+                Spacer()
+            }
+        main
         }
     }
 }
