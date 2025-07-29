@@ -4,22 +4,28 @@ struct ContentView: View {
     var body: some View {
             
         NavigationStack {
-            VStack {
+            
+            VStack (alignment: .center, spacing: 20.0) {
                 Image("BeautyVisaLogo")
                     .resizable()
                     .frame(width: 200.0, height: 200.0)
+
+                Text("BEAUTY VISA")
+                    .font(.title)
+                    .fontWeight(.bold)
                 
-              Text("BEAUTY VISA")
-                .font(.title)
-                .fontWeight(.bold)
-              
-                Spacer()
+                Text("Beauty Visa delivers personalized skincare and makeup tips based on your location or travel plans, factoring in climate, local beauty culture, and ingredient access.")
+                    .multilineTextAlignment(.center)
+                
+                Text("Choose a region below to start!")
+                    .font(.headline)
+                                                    
+                Divider()
                 
                 Text("Regions")
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
-                    
                 
                 HStack(spacing: 20) {
                     NavigationLink("Region 1", destination: SecondView())
@@ -37,7 +43,6 @@ struct ContentView: View {
                 
                 Spacer()
             }
-        main
         }
     }
 }
