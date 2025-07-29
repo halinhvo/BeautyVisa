@@ -18,3 +18,7 @@ struct SecondView: View {
         
     }
 }
+
+#Preview {
+    SecondView()
+}
