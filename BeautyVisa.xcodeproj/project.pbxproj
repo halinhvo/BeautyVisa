@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD2768592E390841001AE84A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2768582E390841001AE84A /* SecondView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		BD2768582E390841001AE84A /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		BDA99C732E380327000885CF /* BeautyVisa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyVisa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +37,7 @@
 		BDA99C6A2E380327000885CF = {
 			isa = PBXGroup;
 			children = (
+				BD2768582E390841001AE84A /* SecondView.swift */,
 				BDA99C752E380327000885CF /* BeautyVisa */,
 				BDA99C742E380327000885CF /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2768592E390841001AE84A /* SecondView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
