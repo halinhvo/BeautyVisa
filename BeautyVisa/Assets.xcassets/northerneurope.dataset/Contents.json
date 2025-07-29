@@ -2,7 +2,8 @@
   "data" : [
     {
       "filename" : "northerneurope.avif",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "universal-type-identifier" : "public.avif"
     }
   ],
   "info" : {
