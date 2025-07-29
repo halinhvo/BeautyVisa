@@ -4,23 +4,17 @@ import SwiftUI
 struct SecondView: View {
     var body: some View {
         
-        Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                
-                Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                    Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        Button("Button") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                            Button("Button") {
-                                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        //region 1 (maybe asia??)
+        
+        //add a navigationtitle/link so we can navigate back home (or a bottom bar)
+        
+        Text("Northern Europe")
+            .font(.system(size: 30))
+            .fontWeight(.semibold)
+            .multilineTextAlignment(.center)
+        Image("northerneurope")
+        Text("")
+        
+        
     }
 }
